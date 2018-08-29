@@ -4,7 +4,6 @@ import requests
 import time
 import re
 import smtplib
-from string import ascii_uppercase
 import pandas as pd
 from bs4 import BeautifulSoup
 
@@ -138,7 +137,7 @@ def stock():
         ans3.grid(row=8,columnspan=2,padx=5,pady=5)
 
         #Reading CSV file (using pandas) that contains list of 1612 Indian stocks listed in NSE 
-        choice=pd.read_csv('C:\\Users\\Rishabh\\Downloads\\LDE_EQUITIES_MORE_THAN_5_YEARS.csv',usecols=[0,2])
+        choice=pd.read_csv('path_to_\LDE_EQUITIES_MORE_THAN_5_YEARS.csv',usecols=[0,2])
         choices=[]
         ch=[]
         symbols=[]
